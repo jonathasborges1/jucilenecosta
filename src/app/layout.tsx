@@ -4,9 +4,10 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import { Metadata } from "next";
 
-import { Header } from "@/components/Header";
+// import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CtaWhatsApp } from "@/components/CtaWhatsApp";
+import { Header } from "@/components/header/Header";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -81,6 +82,7 @@ export default function RootLayout({
         />
       </head>
       <body className={montserrat.className}>
+        {/* <Header /> */}
         <Header />
         <main>{children}</main>
         <CtaWhatsApp />

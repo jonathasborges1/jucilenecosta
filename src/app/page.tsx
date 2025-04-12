@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/sections/Hero";
 import { AboutSection } from "@/components/sections/About";
 import { SpecialtiesSection } from "@/components/sections/Specialties";
 import { ContactSection } from "@/components/sections/Contact";
+import { FAQSection } from "@/components/sections/Faq";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutSection />
       <SpecialtiesSection />
       <ContactSection />
+      <FAQSection />
     </>
   );
 }
