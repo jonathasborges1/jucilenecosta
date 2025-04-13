@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+
+import FAQAnswer from "./FAQAnswer";
 
 const faqs = [
   {
@@ -27,7 +28,7 @@ const faqs = [
   },
 ];
 
-export function FAQSection() {
+export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -37,10 +38,14 @@ export function FAQSection() {
   return (
     <section
       id="faq"
+      aria-labelledby="faq-title"
       className="py-20 px-4 sm:px-6 md:px-12 bg-violet-50 text-gray-800"
     >
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-violet-800 mb-10 text-center">
+        <h2
+          id="faq-title"
+          className="text-3xl sm:text-4xl font-extrabold text-violet-800 mb-10 text-center"
+        >
           Perguntas Frequentes
         </h2>
 
@@ -62,20 +67,7 @@ export function FAQSection() {
                 />
               </button>
 
-              <AnimatePresence initial={false}>
-                {openIndex === index && (
-                  <motion.div
-                    key="content"
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="overflow-hidden mt-3 text-gray-600 text-base"
-                  >
-                    <p>{faq.answer}</p>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+              <FAQAnswer show={openIndex === index}>{faq.answer}</FAQAnswer>
             </li>
           ))}
         </ul>

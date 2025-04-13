@@ -9,6 +9,7 @@ export function HeroSection() {
   return (
     <section
       id="inicio"
+      aria-labelledby="inicio-title"
       className="bg-gradient-to-br from-green-100 via-white to-violet-100 py-20 px-4 md:px-8"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -34,6 +35,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl md:text-5xl font-extrabold leading-tight text-green-900"
+            id="inicio-title"
           >
             Jucilene Costa
           </motion.h1>
@@ -70,6 +72,7 @@ export function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition"
+              aria-label="Iniciar conversa via WhatsApp"
             >
               <FaWhatsapp className="w-5 h-5" />
               <span>Agendar Atendimento</span>

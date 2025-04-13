@@ -1,35 +1,27 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
-export function AboutSection() {
+export default function AboutSection() {
   return (
     <section
       id="sobre"
+      aria-labelledby="sobre-title"
       className="py-20 px-4 sm:px-6 md:px-12 bg-violet-50 text-gray-800"
     >
       {/* Título fixo conforme solicitado */}
-      <motion.h2
-        initial={{ opacity: 0, x: 40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="text-3xl sm:text-4xl font-extrabold text-violet-800 mb-8 text-center"
-      >
-        Sobre a Psicóloga
-      </motion.h2>
-
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* Imagem da psicóloga com efeito visual */}
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="flex flex-col gap-6"
+      <AnimateOnScroll animationClass="animate-fadeInDown">
+        <h2
+          id="sobre-title"
+          className="text-3xl sm:text-4xl font-extrabold text-violet-800 mb-8 text-center animate-fadeInRight"
         >
+          Sobre a Psicóloga
+        </h2>
+      </AnimateOnScroll>
+
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center animate-fadeInLeft">
+        {/* Imagem da psicóloga com efeito visual */}
+        <div className="flex flex-col gap-6">
           <Image
             src="/img/jucilene-perfil.jpg"
             alt="Psicóloga Jucilene Almeida da Costa"
@@ -38,6 +30,7 @@ export function AboutSection() {
             className="rounded-2xl shadow-xl mx-auto object-cover transform transition-transform duration-500 hover:scale-105"
             priority
           />
+
           {/* Destaques visuais */}
           <div className="flex flex-wrap justify-center gap-4 mb-6">
             <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -47,15 +40,10 @@ export function AboutSection() {
               +10 anos de experiência
             </span>
           </div>
-        </motion.div>
+        </div>
 
         {/* Texto + CTA + Destaques */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
+        <div className="animate-fadeInRight">
           <article aria-labelledby="sobre-a-psicologa">
             <p className="text-lg sm:text-xl leading-relaxed mb-6">
               Olá, sou <strong>Jucilene Almeida da Costa</strong>, psicóloga
@@ -78,7 +66,7 @@ export function AboutSection() {
           <div className="mt-10 flex justify-center md:justify-start">
             <ContactCTA />
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
@@ -97,9 +85,15 @@ function ContactCTA() {
       {/* Efeito de ping sutil */}
       <span className="relative">
         <FaWhatsapp size={20} />
-        <span className="absolute -top-1 -right-2 w-3 flex size-3">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-          <span className="relative inline-flex size-3 rounded-full bg-green-500"></span>
+        <span
+          className="absolute -top-1 -right-3 w-3 flex size-3"
+          aria-hidden="true"
+        >
+          <span
+            className="absolute -top-1 h-full w-full rounded-full bg-green-400 opacity-75 animate-pingSlow"
+            style={{ right: "2px", top: "-2px" }}
+          ></span>
+          <span className="relative size-2 rounded-full bg-green-500"></span>
         </span>
       </span>
       Agendar Atendimento

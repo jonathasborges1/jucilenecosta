@@ -24,8 +24,10 @@ export function Header() {
         {/* Mobile Menu Toggle */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-violet-700"
           aria-label="Abrir menu"
+          aria-expanded={isOpen}
+          className="md:hidden text-violet-700"
+          aria-controls="menu-mobile"
         >
           {isOpen ? <X size={26} /> : <Menu size={26} />}
         </button>

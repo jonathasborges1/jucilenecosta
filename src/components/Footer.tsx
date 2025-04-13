@@ -1,13 +1,16 @@
 /* Arquivo: /components/Footer.tsx */
 
-"use client";
-
 import { Mail, Phone, Clock } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-violet-800 text-white pt-12 pb-6 px-4 mt-4">
+    <footer
+      role="contentinfo"
+      className="bg-violet-800 text-white pt-12 pb-6 px-4 mt-4"
+    >
       <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-sm sm:text-base">
         {/* Coluna 1: Identificação */}
         <div>
@@ -27,6 +30,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
+              aria-label="Iniciar conversa via WhatsApp"
             >
               (92) 9 8248-2803
             </Link>
@@ -35,6 +39,7 @@ export function Footer() {
             <Mail className="w-4 h-4" />
             <Link
               href="mailto:contatosamedhy@gmail.com"
+              aria-label="Enviar e-mail para contatosamedhy@gmail.com"
               className="hover:underline"
             >
               contatosamedhy@gmail.com
@@ -53,8 +58,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-violet-600 mt-10 pt-4 text-center text-xs text-violet-200">
-        © {new Date().getFullYear()} Jucilene Almeida da Costa. Todos os
-        direitos reservados.
+        © {currentYear} Jucilene Almeida da Costa. Todos os direitos reservados.
       </div>
     </footer>
   );

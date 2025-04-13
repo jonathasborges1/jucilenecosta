@@ -1,3 +1,11 @@
+# *
 User-agent: *
-Disallow:
-Sitemap: https://jucilenecosta.com.br/sitemap.xml
+Allow: /
+Disallow: /admin
+Disallow: /search
+
+# Host
+Host: https://jucicostapsi.com.br
+
+# Sitemaps
+Sitemap: https://jucicostapsi.com.br/sitemap.xml

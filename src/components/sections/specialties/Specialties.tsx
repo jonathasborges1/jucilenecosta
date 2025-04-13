@@ -56,10 +56,12 @@ function SpecialtyItem({ title, desc }: { title: string; desc: string }) {
   );
 }
 
-export function SpecialtiesSection() {
+export default function SpecialtiesSection() {
   return (
     <motion.section
       id="especialidades"
+      aria-labelledby="especialidades-title"
+      role="region"
       className="py-20 bg-gradient-to-b from-white via-gray-50 to-violet-50"
       initial="hidden"
       whileInView="visible"
@@ -71,7 +73,10 @@ export function SpecialtiesSection() {
           variants={itemVariants}
           className="text-center mb-12 max-w-3xl mx-auto"
         >
-          <h3 className="text-3xl md:text-4xl font-bold text-violet-700">
+          <h3
+            id="especialidades-title"
+            className="text-3xl md:text-4xl font-bold text-violet-700"
+          >
             Especialidades
           </h3>
           <p className="mt-3 text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
