@@ -62,7 +62,7 @@ export default function SpecialtiesSection() {
       id="especialidades"
       aria-labelledby="especialidades-title"
       role="region"
-      className="py-20 bg-gradient-to-b from-white via-gray-50 to-violet-50"
+      className="py-20 bg-gradient-to-b from-[#e0f7fa] to-[#e6d7f0]" // from-[#f3eaf7] via-[#e6d7f0] to-[#f3eaf7]
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}

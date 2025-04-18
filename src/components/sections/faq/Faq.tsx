@@ -7,6 +7,11 @@ import FAQAnswer from "./FAQAnswer";
 
 const faqs = [
   {
+    question: "Onde fica a clínica?",
+    answer:
+      "O consultório está localizado na Rua Teófilo de Matos, 1114, Parque 20 (Altos do Salão Kirei), Manaus - AM.",
+  },
+  {
     question: "As consultas são sigilosas?",
     answer:
       "Sim. Todas as informações compartilhadas durante as sessões são protegidas por sigilo profissional, conforme o Código de Ética do Psicólogo.",
@@ -39,7 +44,7 @@ export default function FAQSection() {
     <section
       id="faq"
       aria-labelledby="faq-title"
-      className="py-20 px-4 sm:px-6 md:px-12 bg-violet-50 text-gray-800"
+      className="py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-b from-[#e6d7f0] to-[#fff9c4] text-gray-800" // bg-violet-50 //  bg-[#e5f8ff]
     >
       <div className="max-w-4xl mx-auto">
         <h2

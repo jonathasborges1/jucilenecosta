@@ -8,7 +8,7 @@ export default function ContactSection() {
     <motion.section
       id="contato"
       aria-labelledby="contato-title"
-      className="py-20 bg-white"
+      className="py-20 bg-[#e0c9ef]" // bg-white
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

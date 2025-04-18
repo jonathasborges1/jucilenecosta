@@ -7,7 +7,7 @@ export default function AboutSection() {
     <section
       id="sobre"
       aria-labelledby="sobre-title"
-      className="py-20 px-4 sm:px-6 md:px-12 bg-violet-50 text-gray-800"
+      className="py-20 px-4 sm:px-6 md:px-12 bg-[#eff6f7] text-gray-800" //  bg-violet-50
     >
       {/* Título fixo conforme solicitado */}
       <AnimateOnScroll animationClass="animate-fadeInDown">
@@ -33,7 +33,10 @@ export default function AboutSection() {
 
           {/* Destaques visuais */}
           <div className="flex flex-wrap justify-center gap-4 mb-6">
-            <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+            {/* <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+              CRP 20/03418
+            </span> */}
+            <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium hover:bg-green-200 transition-all duration-500">
               CRP 20/03418
             </span>
             <span className="bg-violet-100 text-violet-700 px-3 py-1 rounded-full text-sm font-medium">
@@ -45,15 +48,23 @@ export default function AboutSection() {
         {/* Texto + CTA + Destaques */}
         <div className="animate-fadeInRight">
           <article aria-labelledby="sobre-a-psicologa">
-            <p className="text-lg sm:text-xl leading-relaxed mb-6">
+            {/* <p className="text-lg sm:text-xl leading-relaxed mb-6">
               Olá, sou <strong>Jucilene Almeida da Costa</strong>, psicóloga
               (CRP 20/03418) com ampla experiência no atendimento de{" "}
               <strong>adultos, adolescentes, mulheres e casais</strong>. Atendo
               presencialmente em Manaus-AM e online para todo o Brasil,
               Portugal, EUA e Inglaterra.
+            </p> */}
+
+            <p className="text-lg sm:text-xl leading-relaxed mb-6">
+              Psicóloga Clínica, formada pelo Centro Universitário Nilton Lins
+              em 2008. Terapeuta Integrativa desde 2021, nas práticas de{" "}
+              <strong> Barras de Access, Facelifiti, Cromoterapia</strong> e
+              outros, além de cursar Neurociência do Desenvolvimento Humano pela
+              Escola de Mediadores
             </p>
 
-            <p className="text-lg sm:text-xl leading-relaxed">
+            <p className="text-lg sm:text-xl leading-relaxed hidden">
               Atuo com foco no cuidado da saúde emocional, auxiliando no
               enfrentamento de{" "}
               <strong>ansiedade, depressão, estresse e burnout</strong>. Minha
@@ -79,12 +90,18 @@ function ContactCTA() {
       href="https://wa.me/5592982482803?text=Olá! Gostaria de agendar uma consulta."
       target="_blank"
       rel="noopener noreferrer"
-      className="relative inline-flex items-center gap-2 bg-violet-700 hover:bg-violet-800 text-white font-medium py-3 px-6 rounded-full text-lg shadow-md transition"
+      // className="relative inline-flex items-center gap-2 bg-violet-700 hover:bg-violet-800 text-white font-medium py-3 px-6 rounded-full text-lg shadow-md transition"
+      className="group relative inline-flex items-center gap-2 bg-violet-700 hover:bg-violet-800 text-white font-medium py-3 px-6 rounded-full text-lg shadow-md hover:shadow-lg transition-all duration-500"
       aria-label="Agendar atendimento pelo WhatsApp"
     >
       {/* Efeito de ping sutil */}
       <span className="relative">
-        <FaWhatsapp size={20} />
+        {/* <FaWhatsapp size={20} /> */}
+        <FaWhatsapp
+          size={20}
+          className="transition-transform duration-500 group-hover:scale-110"
+        />
+
         <span
           className="absolute -top-1 -right-3 w-3 flex size-3"
           aria-hidden="true"

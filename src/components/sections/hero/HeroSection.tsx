@@ -7,7 +7,7 @@ export function HeroSection() {
     <section
       id="inicio"
       aria-labelledby="inicio-title"
-      className="bg-gradient-to-br from-green-100 via-white to-violet-100 py-20 px-4 md:px-8"
+      className="bg-gradient-to-b from-[#e0fcea] to-[#e0f7fa] py-20 px-4 md:px-8" // bg-gradient-to-br from-green-100 via-white to-violet-100
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Texto */}
@@ -39,7 +39,8 @@ export function HeroSection() {
               href="https://wa.me/5592982482803?text=Olá! Gostaria de agendar uma consulta."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition"
+              // className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition"
+              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all duration-500"
               aria-label="Iniciar conversa via WhatsApp"
             >
               <FaWhatsapp className="w-5 h-5" />

@@ -1,6 +1,6 @@
 /* Arquivo: /components/Footer.tsx */
 
-import { Mail, Phone, Clock } from "lucide-react";
+import { Mail, Phone, Clock, MapPin } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer
       role="contentinfo"
-      className="bg-violet-800 text-white pt-12 pb-6 px-4 mt-4"
+      className="bg-[#7d21c4] text-white pt-12 pb-6 px-4 mt-2" // bg-violet-500
     >
       <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-sm sm:text-base">
         {/* Coluna 1: Identificação */}
@@ -53,6 +53,14 @@ export function Footer() {
           <p className="flex items-center gap-2">
             <Clock className="w-4 h-4" />
             Seg. a Sex: 08h–11h / 14h–20h
+          </p>
+          <p className="flex items-start gap-2 mt-2">
+            <MapPin className="w-4 h-4 mt-1" />
+            <span>
+              Rua Teófilo de Matos, 1114
+              <br />
+              Parque 20 (Altos do Salão Kirei), Manaus - AM
+            </span>
           </p>
         </div>
       </div>

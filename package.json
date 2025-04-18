@@ -2,6 +2,9 @@
   "name": "jucilenecosta",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+  "node": ">=20.0.0"
+  },
   "scripts": {
     "devi": "next dev",
     "dev": "next dev --turbopack",
