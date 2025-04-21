@@ -15,7 +15,7 @@ import { URL_BASE } from "./layout";
 export const metadata: Metadata = {
   title: "Psicóloga em Manaus - Atendimento Online e Presencial",
   description:
-    "Ansiedade, depressão, burnout. Atendimento presencial em Manaus e online para Brasil, Portugal, EUA e Inglaterra. Agende sua consulta com a psicóloga Jucilene Almeida da Costa.",
+    "Ansiedade, depressão, burnout. Atendimento presencial em Manaus e online para Brasil, Portugal, EUA e Inglaterra. Agende sua consulta com a psicóloga Jucilene Almêda da Costa.",
   keywords: [
     "Psicóloga em Manaus",
     "terapia online",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "psicoterapia Manaus",
   ],
   category: "Saúde Mental",
-  creator: "Jucilene Almeida da Costa",
+  creator: "Jucilene Almêda da Costa",
   alternates: {
     canonical: URL_BASE,
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "Atendimento psicológico com foco em saúde mental. Presencial em Manaus e online para Brasil, Portugal, EUA e Inglaterra.",
     url: URL_BASE,
-    siteName: "Jucilene Almeida da Costa",
+    siteName: "Jucilene Almêda da Costa",
     locale: "pt_BR",
     type: "website",
     images: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Psicóloga em Manaus - Atendimento Online e Presencial",
     description:
-      "Psicoterapia com foco em ansiedade, depressão e burnout. Atendimento presencial e online com a psicóloga Jucilene Almeida da Costa.",
+      "Psicoterapia com foco em ansiedade, depressão e burnout. Atendimento presencial e online com a psicóloga Jucilene Almêda da Costa.",
     images: [`${URL_BASE}/og-image.jpg`],
   },
 };

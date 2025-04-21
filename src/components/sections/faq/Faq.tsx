@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Onde fica a clínica?",
     answer:
-      "O consultório está localizado na Rua Teófilo de Matos, 1114, Parque 20 (Altos do Salão Kirei), Manaus - AM.",
+      "O consultório está localizado na Rua Teodulo de Matos, 1114, Parque 10 (Altos do Salão Kirei), Manaus - AM.",
   },
   {
     question: "As consultas são sigilosas?",
@@ -26,11 +26,11 @@ const faqs = [
     answer:
       "Sim, atendo online para todo o Brasil e também para brasileiros que moram em Portugal, EUA e Inglaterra.",
   },
-  {
-    question: "O atendimento é apenas para mulheres?",
-    answer:
-      "Não. Atendo adolescentes, mulheres, adultos em geral e casais, respeitando as individualidades e demandas de cada um.",
-  },
+  // {
+  //   question: "O atendimento é apenas para mulheres?",
+  //   answer:
+  //     "Não. Atendo adolescentes, mulheres, adultos em geral e casais, respeitando as individualidades e demandas de cada um.",
+  // },
 ];
 
 export default function FAQSection() {

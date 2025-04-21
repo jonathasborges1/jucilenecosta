@@ -14,16 +14,20 @@ const specialties = [
     desc: "Apoio no enfrentamento da tristeza profunda e falta de motivação.",
   },
   {
-    title: "Burnout",
-    desc: "Recupere-se do esgotamento físico e mental causado por excesso de demandas.",
-  },
-  {
     title: "Autoconhecimento e equilíbrio emocional",
     desc: "Desenvolva consciência emocional e fortaleça sua identidade pessoal.",
   },
   {
-    title: "Atendimento individual e terapia de casal",
-    desc: "Crescimento pessoal e melhoria da comunicação nos relacionamentos.",
+    title: "Cromoterapia",
+    desc: "Prática complementar que utiliza luzes de diferentes cores para promover o equilíbrio físico, emocional e energético. Reconhecida pela OMS.",
+  },
+  {
+    title: "Barras de Access",
+    desc: "Terapia corporal que utiliza toques suaves em 32 pontos da cabeça, com o objetivo de promover o equilíbrio entre mente e corpo.",
+  },
+  {
+    title: "Facelift Access",
+    desc: "Técnica energética que visa rejuvenescer o rosto e o corpo.",
   },
 ];
 
@@ -80,12 +84,13 @@ export default function SpecialtiesSection() {
             Especialidades
           </h3>
           <p className="mt-3 text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
-            Abordagens focadas no cuidado da saúde emocional e no bem-estar da
-            mulher, adolescentes, adultos e casais.
+            Abordagem clínica Integrativa, atravessada pela ética da Terapia
+            Sistêmica, no que tange o cuidado da saúde integral: Corpo. Mente e
+            Espírito.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 mt-4">
-            {["Adultos", "Adolescentes", "Mulheres", "Casais"].map((label) => (
+            {["Adolescentes", "Adultos", "Casal", "Família"].map((label) => (
               <span
                 key={label}
                 className="bg-violet-100 text-violet-700 px-3 py-1 rounded-full text-sm font-medium"

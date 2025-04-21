@@ -12,7 +12,7 @@ export function HeroSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Texto */}
         <div className="text-center lg:text-left animate-fadeInUp" data-observe>
-          <div className="inline-block mb-4 px-5 py-1 rounded-full text-sm font-semibold bg-green-200 text-green-800 uppercase tracking-wider">
+          <div className="inline-block mb-4 px-5 py-1 rounded-full text-sm font-semibold bg-violet-700 text-white uppercase tracking-wider">
             Atendimento Online e Presencial
           </div>
 
@@ -28,10 +28,10 @@ export function HeroSection() {
           </p>
 
           <p className="mt-6 text-lg md:text-xl text-gray-700 max-w-xl lg:max-w-none mx-auto lg:mx-0 leading-relaxed">
-            Por meio de sessões de <strong>terapia online e presencial</strong>{" "}
-            em Manaus, te ajudo a cultivar o <strong>autoconhecimento</strong>,
-            fortalecer sua <strong>saúde mental</strong> e promover equilíbrio
-            emocional em sua vida.
+            Por meio de sessões de terapia online e presencial em Manaus, te
+            ajudo a cultivar o autoconhecimento, fortalecer sua saúde integral e
+            promover <strong> equilíbrio mental</strong>,
+            <strong> físico </strong> e <strong>energético</strong>.
           </p>
 
           <div className="mt-8 flex justify-center lg:justify-start">
@@ -40,7 +40,7 @@ export function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               // className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition"
-              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all duration-500"
+              className="inline-flex items-center gap-2 bg-violet-700 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all duration-500"
               aria-label="Iniciar conversa via WhatsApp"
             >
               <FaWhatsapp className="w-5 h-5" />

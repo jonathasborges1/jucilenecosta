@@ -19,7 +19,7 @@ export const URL_BASE = "https://jucilenecosta.com.br";
 
 export const metadata: Metadata = {
   title: {
-    default: "Psicóloga em Manaus - Jucilene Almeida da Costa",
+    default: "Psicóloga em Manaus - Jucilene Almêda da Costa",
     template: "%s | Psicóloga em Manaus - Jucilene Costa",
   },
   description:
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Psicóloga em Manaus - Jucilene Almeida da Costa",
+    title: "Psicóloga em Manaus - Jucilene Almêda da Costa",
     description:
       "Atendimento psicológico online e presencial com foco em saúde mental e bem-estar. Psicoterapia para ansiedade, depressão e burnout.",
     url: URL_BASE,
-    siteName: "Jucilene Almeida da Costa",
+    siteName: "Jucilene Almêda da Costa",
     locale: "pt_BR",
     type: "website",
     images: [
@@ -72,7 +72,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Jucilene Almeida da Costa",
+              name: "Jucilene Almêda da Costa",
               image: `${URL_BASE}/og-image.jpg`,
               "@id": URL_BASE,
               url: URL_BASE,

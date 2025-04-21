@@ -38,11 +38,11 @@ export default function ContactSection() {
           </a>
 
           <a
-            href="mailto:contatosamedhy@gmail.com"
+            href="mailto:contatosamedh@gmail.com"
             className="inline-flex items-center gap-2 bg-violet-100 hover:bg-violet-200 text-violet-700 font-medium px-5 py-3 rounded-full shadow-sm transition"
           >
             <Mail className="w-5 h-5" />
-            contatosamedhy@gmail.com
+            contatosamedh@gmail.com
           </a>
         </div>
       </div>

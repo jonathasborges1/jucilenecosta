@@ -14,7 +14,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-sm sm:text-base">
         {/* Coluna 1: Identificação */}
         <div>
-          <h4 className="text-lg font-bold mb-2">Jucilene Almeida da Costa</h4>
+          <h4 className="text-lg font-bold mb-2">Jucilene Almêda da Costa</h4>
           <p>Psicóloga - CRP 20/03418</p>
           <p>Atendimento presencial em Manaus-AM</p>
           <p>Atendimento online para Brasil, Portugal, EUA e Inglaterra</p>
@@ -38,11 +38,11 @@ export function Footer() {
           <p className="flex items-center gap-2 mt-1">
             <Mail className="w-4 h-4" />
             <Link
-              href="mailto:contatosamedhy@gmail.com"
+              href="mailto:contatosamedh@gmail.com"
               aria-label="Enviar e-mail para contatosamedhy@gmail.com"
               className="hover:underline"
             >
-              contatosamedhy@gmail.com
+              contatosamedh@gmail.com
             </Link>
           </p>
         </div>
@@ -57,16 +57,16 @@ export function Footer() {
           <p className="flex items-start gap-2 mt-2">
             <MapPin className="w-4 h-4 mt-1" />
             <span>
-              Rua Teófilo de Matos, 1114
+              Rua Teodulo de Matos, 1114
               <br />
-              Parque 20 (Altos do Salão Kirei), Manaus - AM
+              Parque 10 (Altos do Salão Kirei), Manaus - AM
             </span>
           </p>
         </div>
       </div>
 
       <div className="border-t border-violet-600 mt-10 pt-4 text-center text-xs text-violet-200">
-        © {currentYear} Jucilene Almeida da Costa. Todos os direitos reservados.
+        © {currentYear} Jucilene Almêda da Costa. Todos os direitos reservados.
       </div>
     </footer>
   );

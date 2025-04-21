@@ -14,7 +14,12 @@ export function Logo() {
         height={28}
         className="sm:inline"
       />
-      Jucilene Almeida da Costa
+      <div className={"flex flex-col gap-0"}>
+        <h3 className="font-bold">SAMEDH</h3>
+        <p className="text-xs text-gray-600 mt-0 mr-10">
+          Espaço clínico de Psicologia e Práticas Integrativas Complementares
+        </p>
+      </div>
     </Link>
   );
 }

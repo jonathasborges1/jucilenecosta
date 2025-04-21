@@ -24,7 +24,7 @@ export default function AboutSection() {
         <div className="flex flex-col gap-6">
           <Image
             src="/img/jucilene-perfil.jpg"
-            alt="Psicóloga Jucilene Almeida da Costa"
+            alt="Psicóloga Jucilene Almêda da Costa"
             width={500}
             height={650}
             className="rounded-2xl shadow-xl mx-auto object-cover transform transition-transform duration-500 hover:scale-105"
@@ -33,9 +33,6 @@ export default function AboutSection() {
 
           {/* Destaques visuais */}
           <div className="flex flex-wrap justify-center gap-4 mb-6">
-            {/* <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-              CRP 20/03418
-            </span> */}
             <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium hover:bg-green-200 transition-all duration-500">
               CRP 20/03418
             </span>
@@ -48,28 +45,12 @@ export default function AboutSection() {
         {/* Texto + CTA + Destaques */}
         <div className="animate-fadeInRight">
           <article aria-labelledby="sobre-a-psicologa">
-            {/* <p className="text-lg sm:text-xl leading-relaxed mb-6">
-              Olá, sou <strong>Jucilene Almeida da Costa</strong>, psicóloga
-              (CRP 20/03418) com ampla experiência no atendimento de{" "}
-              <strong>adultos, adolescentes, mulheres e casais</strong>. Atendo
-              presencialmente em Manaus-AM e online para todo o Brasil,
-              Portugal, EUA e Inglaterra.
-            </p> */}
-
             <p className="text-lg sm:text-xl leading-relaxed mb-6">
               Psicóloga Clínica, formada pelo Centro Universitário Nilton Lins
               em 2008. Terapeuta Integrativa desde 2021, nas práticas de{" "}
-              <strong> Barras de Access, Facelifiti, Cromoterapia</strong> e
+              <strong>Barras de Access, Facelift Access, Cromoterapia</strong> e
               outros, além de cursar Neurociência do Desenvolvimento Humano pela
-              Escola de Mediadores
-            </p>
-
-            <p className="text-lg sm:text-xl leading-relaxed hidden">
-              Atuo com foco no cuidado da saúde emocional, auxiliando no
-              enfrentamento de{" "}
-              <strong>ansiedade, depressão, estresse e burnout</strong>. Minha
-              abordagem é baseada em evidências, com destaque para a Terapia de
-              Aceitação e Compromisso (ACT).
+              Escola de Mediadores.
             </p>
           </article>
 
