@@ -9,6 +9,8 @@ import ClientWrapper from "@/components/ClientWrapper";
 import { Header } from "@/components/header/Header";
 import { CtaWhatsApp } from "@/components/CtaWhatsApp";
 import { Footer } from "@/components/Footer";
+import GoogleTag from "@/components/GoogleTag";
+import LogAppVersion from "@/components/LogAppVersion";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -104,9 +106,11 @@ export default function RootLayout({
             }),
           }}
         />
+        <GoogleTag />
       </head>
       <body className={montserrat.className}>
         <Header />
+        <LogAppVersion />
         <ClientWrapper>{children}</ClientWrapper>
         <CtaWhatsApp />
         <Footer />

@@ -46,25 +46,6 @@ export default function ContactSection() {
           </a>
         </div>
       </div>
-      {/* <motion.div
-        className="h-12 bg-gradient-to-b from-white to-gray-50 w-full -mb-12"
-        initial={{ opacity: 0, y: -10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      /> */}
-      {/* <div className="overflow-hidden leading-none rotate-180">
-        <svg
-          viewBox="0 0 500 150"
-          preserveAspectRatio="none"
-          className="w-full h-12"
-        >
-          <path
-            d="M0.00,49.98 C150.00,150.00 350.00,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-            fill="#f9fafb"
-          />
-        </svg>
-      </div> */}
-      {/* <Divider /> */}
     </motion.section>
   );
 }
